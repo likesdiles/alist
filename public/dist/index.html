@@ -1,3 +1,23 @@
-<!DOCTYPE html><html><body>
-hello world
-</body></html>
+<!DOCTYPE html><html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AList</title>
+    <script>
+        // 在页面加载前设置默认语言为中文
+        window.addEventListener('DOMContentLoaded', function() {
+            // 检查是否已经设置了语言
+            if (!localStorage.getItem('language')) {
+                // 设置默认语言为中文
+                localStorage.setItem('language', 'zh-CN');
+                console.log('已将默认语言设置为中文');
+            }
+        });
+    </script>
+</head>
+<body>
+    <div id="root"></div>
+    <!-- 原始内容 -->
+    hello world
+</body>
+</html>
